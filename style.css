@@ -2,46 +2,114 @@
     background-color: black;
 }
 
-.uno {
-    background-color: #2dba78;
-    color: #84e85b;
-    text-align: center;
-    padding-top: 1em;
-    padding-bottom: 1em;
-    font-size: 5em;
-    font-family: 'Courier New', Courier, monospace;
+.linia {
+    border-color: #181818;
+    width: 75%
 }
 
-.tres {
+.inicio {
     background-color: black;
     color: white;
     display: flex;
+    justify-content: space-evenly;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    padding-left: 2em;
+    border: 0.1em solid gray;
+    text-align: center;
+}
+
+.intro {
+    display: flex;
+    justify-items: center;
+    border: 0em solid gray;
+    font-size: 3em;
+    align-items: center;
+    text-align: center;
+}
+
+.dos {
+    background-color: white;
+}
+
+.titulo {
+    background-color: black;
+    animation: brillo 3s infinite alternate;
+    color: #181818;
+    text-align: center;
+    text-shadow: 25px 25px 25px;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    font-size: 6em;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.un {
+    color: aqua;
+}
+
+@keyframes brillo {
+    0% {
+      color: rgb(255, 255, 255);
+    }
+    100% {
+      color: #181818;
+    }
+  }
+
+.tres {
+    background-color: #181818;
+    color: white;
     align-items: center;
     padding-top: 1em;
     padding-bottom: 1em;
     padding-left: 1em;
     padding-right: 1em;
-    border: 0.1em solid black;
-    justify-content: space-around;
+    border: 0em solid black;
     font-size: 1.5em;
     font-family: 'Courier New', Courier, monospace;
-    flex-flow: column wrap 3;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 
 .cuadrado {
     display: flex;
-    border: 0.1em solid black;
+    justify-content: space-around;
+    border: 0em solid black;
+    width: 500px;
+    height: 400px;
+    flex-wrap: wrap;
 }
 
-.texto {
+.titulotexto {
     display: flex;
-    border: 0.5em solid white;
+    width: 425px;
+    height: 100px;
+    border: 0em solid black;
     justify-content: space-around;
     color: white;
-    padding-top: 1em;
-    padding-bottom: 1em;
+    padding-bottom: 0.5em;
     padding-left: 1em;
     padding-right: 1em;
     font-size: 1.5em;
     font-family: 'Courier New', Courier, monospace;
+    flex-wrap: wrap;
+}
+
+.texto {
+    background-color: black;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 500px;
+    height: 100px;
+    border: 0.1em solid black;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.8em;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
 }
