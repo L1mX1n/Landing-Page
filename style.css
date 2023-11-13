@@ -1,0 +1,47 @@
+.fuera {
+    background-color: black;
+}
+
+.uno {
+    background-color: #2dba78;
+    color: #84e85b;
+    text-align: center;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    font-size: 5em;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.tres {
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    padding-left: 1em;
+    padding-right: 1em;
+    border: 0.1em solid black;
+    justify-content: space-around;
+    font-size: 1.5em;
+    font-family: 'Courier New', Courier, monospace;
+    flex-flow: column wrap 3;
+}
+
+.cuadrado {
+    display: flex;
+    border: 0.1em solid black;
+}
+
+.texto {
+    display: flex;
+    border: 0.5em solid white;
+    justify-content: space-around;
+    color: white;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    padding-left: 1em;
+    padding-right: 1em;
+    font-size: 1.5em;
+    font-family: 'Courier New', Courier, monospace;
+}
