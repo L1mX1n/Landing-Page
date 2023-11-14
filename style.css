@@ -7,16 +7,44 @@
     width: 75%
 }
 
+.barra {
+    display: flex;
+    justify-content: end;
+    border: 0.1em solid gray;
+    padding-top: 1em;
+    padding-right: 1em;
+    padding-bottom: 1em;
+    background-color: black;
+    color: white;
+    flex-wrap: wrap;
+    font-size: 1em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.boton {
+    display: flex;
+    flex-direction: row;
+    background-color: #181818;
+    padding: 0.5em;
+    border: 0.1em solid white;
+    margin-inline-end: 1em;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+}
+
 .inicio {
     background-color: black;
     color: white;
-    display: flex;
-    justify-content: space-evenly;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     padding-top: 1em;
     padding-bottom: 1em;
     padding-left: 2em;
     border: 0.1em solid gray;
     text-align: center;
+    grid-template-rows: auto;
 }
 
 .intro {
@@ -26,16 +54,42 @@
     font-size: 3em;
     align-items: center;
     text-align: center;
+    padding-right: 1em;
 }
 
+.Segundo {
+    background-color: black;
+    color: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    padding-left: 2em;
+    border: 0.1em solid gray;
+    text-align: center;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "header header"
+    "main .";
+}
+
+
 .dos {
-    background-color: white;
+    background-color: black;
+}
+
+.azul {
+    color: #00b8fc;
+    font-size: 0.5em;
+    border: 0.1em solid white;
+}
+
+.ft {
 }
 
 .titulo {
     background-color: black;
-    animation: brillo 3s infinite alternate;
-    color: #181818;
+    color: white;
     text-align: center;
     text-shadow: 25px 25px 25px;
     padding-top: 1em;
@@ -45,7 +99,8 @@
 }
 
 .un {
-    color: aqua;
+    color: gray;
+    animation: brillo 3s infinite alternate;
 }
 
 @keyframes brillo {
@@ -71,6 +126,23 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+
+}
+
+.nueve {
+    background-color: #181818;
+    color: white;
+    align-items: center;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    padding-left: 1em;
+    padding-right: 1em;
+    font-size: 1.5em;
+    font-family: 'Courier New', Courier, monospace;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
 }
 
 .cuadrado {
@@ -80,6 +152,26 @@
     width: 500px;
     height: 400px;
     flex-wrap: wrap;
+}
+
+.gaming {
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    color: white;
+    padding: 0.5em;
+    font-size: 3em;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.office {
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    color: white;
+    padding: 0.5em;
+    font-size: 3em;
+    font-family: 'Courier New', Courier, monospace;
 }
 
 .titulotexto {
@@ -95,6 +187,7 @@
     font-size: 1.5em;
     font-family: 'Courier New', Courier, monospace;
     flex-wrap: wrap;
+    text-align: center;
 }
 
 .texto {
