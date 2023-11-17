@@ -80,8 +80,8 @@
 
 .azul {
     color: #00b8fc;
-    font-size: 0.5em;
-    border: 0.1em solid white;
+    font-size: 0.3em;
+    border: 0em solid white;
 }
 
 .ft {
@@ -142,7 +142,6 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-
 }
 
 .cuadrado {
@@ -152,6 +151,7 @@
     width: 500px;
     height: 400px;
     flex-wrap: wrap;
+    justify-items: center;
 }
 
 .gaming {
@@ -162,8 +162,29 @@
     padding: 0.5em;
     font-size: 3em;
     font-family: 'Courier New', Courier, monospace;
+    border: 0.01em solid gray;
 }
 
+.animacion {
+    animation-duration: 3s;
+    animation-name: slidein;
+    animation-iteration-count: 1;
+    animation-direction: initial;
+}
+
+@keyframes slidein {
+    from {
+      margin-left: 200%;
+      width: 150%;
+    }
+  
+    to {
+      margin-left: 10%;
+      width: 20%;
+    }
+  }
+
+  
 .office {
     display: flex;
     justify-content: center;
@@ -172,6 +193,7 @@
     padding: 0.5em;
     font-size: 3em;
     font-family: 'Courier New', Courier, monospace;
+    border: 0.01em solid gray;
 }
 
 .titulotexto {
@@ -205,4 +227,57 @@
     border-top-right-radius: 1rem;
     border-bottom-left-radius: 1rem;
     border-bottom-right-radius: 1rem;
+} 
+
+.fondotitulo {
+    background-color: black;
+    display: flex;
+    justify-content: space-around;
+    color: white;
+    padding-top: 1em;
+    padding-right: 1em;
+}
+
+.fondo {
+    background-color: black;
+    display: flex;
+    justify-content: space-around;
+    color: white;
+    padding-top: 1em;
+    padding-right: 1em;
+    padding-bottom: 1em;
+}
+
+.boxfinaltitulo {
+    display: flex;
+    width: 425px;
+    height: 30px;
+    border: 0em solid black;
+    justify-content: space-around;
+    color: white;
+    padding-left: 1em;
+    padding-right: 1em;
+    font-size: 1.5em;
+    font-family: 'Courier New', Courier, monospace;
+    flex-wrap: wrap;
+    text-align: center;
+    border: 0em solid white;
+}
+
+.boxfinal {
+    background-color: black;
+    display: flex;
+    border: 0em solid white;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 500px;
+    height: 20px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.9em;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    padding-bottom: 16em;
 }
